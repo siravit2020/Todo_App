@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.AddTodoActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Add"
+                android:background="#FFFFFF"
+                app:titleTextColor="@color/colorPrimary"
+                app:navigationIconColor="#A6A6A6"
+                app:subtitleTextColor="@color/colorPrimaryDark"
+                app:menu="@menu/app_bar"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/time_editText"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:background="#00FFFFFF"
+                android:hint="Time"
+                android:focusable="false"
+                android:textColor="@color/blackGrey"
+                android:text=""
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#B8B8B8"
+                />
+            <EditText
+                android:id="@+id/title_editText"
+                android:paddingLeft="24dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:textSize="16dp"
+                android:hint="message"
+                android:textColor="@color/blackGrey"
+                android:background="#00FFFFFF"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
